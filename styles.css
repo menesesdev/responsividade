@@ -29,8 +29,8 @@ main {
 
 h1 {
     font-weight: 800;
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 3.5rem;
+    line-height: 5rem;
 
     margin-bottom: 1.5rem;
 }
@@ -67,6 +67,10 @@ ul {
     margin-top: 7.2rem;
 }
 
+ul li+li {
+    margin-top: 3.3rem;
+}
+
 ul li {
     font-weight: 700;
     font-size: 2.4rem;
@@ -84,6 +88,30 @@ ul li span {
     font-size: 7.2rem;
     line-height: 8.0rem;
     letter-spacing: -2px;
+}
 
+@media(min-width: 700px) {
+    body {
+        padding-top: 8rem;
+    }
 
+    main {
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem;
+    }
+
+    main>div {
+        max-width: 484px;
+    }
+
+    ul li {
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+    }
+
+    ul li+li {
+        margin-top: 3.3rem;
+    }
 }
